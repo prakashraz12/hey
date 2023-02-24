@@ -3,8 +3,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import {  CardActionArea, } from '@mui/material';
-
+import { CardActionArea, } from '@mui/material';
 import OutdoorGrillOutlinedIcon from '@mui/icons-material/OutdoorGrillOutlined';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import LocalAtmOutlinedIcon from '@mui/icons-material/LocalAtmOutlined';
@@ -12,9 +11,9 @@ import styled from 'styled-components';
 import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
 const ContainerItem = styled.div`
 display:flex;
-padding:10px;
+padding:15px;
 width:100%;
-gap:5px;
+justify-content: space-between;
 height:auto;`
 const Contain = styled.div`
 display:flex;
@@ -26,10 +25,9 @@ align-items:center;
 margin-top:5px;
 
 `
-console.log(Restaurants)
 export default function ActionAreaCard() {
     return (
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 350 }}>
             <CardActionArea>
                 <CardMedia
                     component="img"
@@ -39,7 +37,7 @@ export default function ActionAreaCard() {
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
-                    Yarsa Nepalese Cuisine 
+                        Yarsa Nepalese Cuisine
                     </Typography>
                     <Typography variant='body3' color='gray'>North Beach
                         San Francisco
@@ -47,7 +45,7 @@ export default function ActionAreaCard() {
 
                     </Typography>
                     <InfoContainer>
-                        <CallOutlinedIcon fontSize='small'/>
+                        <CallOutlinedIcon fontSize='small' />
                         <Typography variant='body3' color='gray'>
                             984-456790
 
